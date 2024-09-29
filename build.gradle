@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+}
+
+group = 'dev.dskarpets'
+version = ''
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+jar {
+    manifest {
+        attributes 'Implementation-Title': 'Gradle Quickstart',
+                'Implementation-Version': version,
+                'Main-Class': 'dev.dskarpets.DirectMergeSort'
+    }
+}
+
+test {
+    useJUnitPlatform()
+}
+
