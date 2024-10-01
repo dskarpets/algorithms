@@ -5,7 +5,7 @@ import java.util.*;
 
 public class DirectMergeSort {
 
-    private static final int CHUNK_SIZE = 100 * 1024 * 1024;
+    private static final int CHUNK_SIZE = 300 * 1024 * 1024;
     private static final int AVERAGE_NUMBER_SIZE = 11;
 
     public static void main(String[] args) throws IOException {
